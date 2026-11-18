@@ -49,12 +49,14 @@ export function useCars({
 
   const variables = useMemo<GetCarsVars>(() => {
     const trimmedModel = model?.trim();
-
+  
     return {
       ...(trimmedModel ? { model: trimmedModel } : {}),
       ...(year ? { year } : {}),
     };
   }, [model, year]);
+
+  console.log("variables", variables);
 
   const { data, loading, error, refetch } = useQuery<
     GetCarsData,

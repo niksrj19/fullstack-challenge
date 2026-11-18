@@ -26,8 +26,8 @@ export default function CarsHomePage() {
   const [search, setSearch] = useState("");
   const [year, setYear] = useState("");
 
-  const debouncedSearch = useDebounce(search, 500);
-  const debouncedYear = useDebounce(year, 500);
+  const debouncedSearch = useDebounce<string>(search, 500);
+  const debouncedYear = useDebounce<string>(year, 500);
 
   const [sortBy, setSortBy] = useState<SortField>("make");
   const [direction, setDirection] = useState<SortDirection>("asc");

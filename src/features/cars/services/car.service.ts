@@ -3,7 +3,7 @@ import { gql } from '@apollo/client';
 
 export const GET_CARS = gql`
   query GetCars($model: String, $year: Int) {
-    cars(model: $model) {
+    cars(model: $model, year: $year) {
         id
         make
         model 

@@ -1,7 +1,3 @@
-//create a car details page id will come from query params and fetch the car details from the api and display it on the page
-import {GET_CAR} from "@/features/cars/services/car.service";
-import {useQuery} from "@apollo/client";
-import {useParams} from "react-router-dom";
 
 import {
   Box,

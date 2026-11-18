@@ -50,7 +50,7 @@ const { id } = useParams<{ id: string }>();
 
         <Button
           startIcon={<ArrowBackIcon />}
-          onClick={() => navigate('/carHomePage')}
+          onClick={() => navigate('/')}
           sx={{ mt: 2 }}
         >
           Back to Cars
@@ -68,7 +68,7 @@ const { id } = useParams<{ id: string }>();
 
         <Button
           startIcon={<ArrowBackIcon />}
-          onClick={() => navigate('/carHomePage')}
+          onClick={() => navigate('/')}
           sx={{ mt: 2 }}
         >
           Back to Cars
@@ -82,7 +82,7 @@ const { id } = useParams<{ id: string }>();
       <Container maxWidth="lg" sx={{ py: 4 }}>
          <Button
         startIcon={<ArrowBackIcon />}
-        onClick={() => navigate('/carHomePage')}
+        onClick={() => navigate('/')}
         sx={{ mb: 3 }}
       >
         Back to Cars
